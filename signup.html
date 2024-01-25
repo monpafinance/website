@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monpa - Create an Account</title>
+
+  <link rel="shortcut icon" href="assets/imgs/monpa-logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/css/signup.css">
+
+  <script src="assets/js/signup.js" defer></script>
+</head>
+<body>
+  <aside></aside>
+
+  <main>
+    <div class="header">
+      <img src="assets/imgs/monpa-brand-logo.png" class="d-block mb-3" alt="Monpa Finance - Brand Logo" height="20px" />
+      <h1 class="fs-6 text-primary">Create an account</h1>
+    </div>
+
+    <div class="page-content">
+      <form action="javascript:void()" method="post" id="signup-form">
+        <!-- Email Address -->
+        <div class="form-input-field email-address-field my-3">
+          <label for="email">Enter your email address</label>
+          <input type="email" name="email" id="email" placeholder="Email Address">
+        </div>
+
+        <!-- Password -->
+        <div class="form-input-field password-field my-3">
+          <label for="password">Enter password</label>
+          <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+
+        <!-- Confirm password -->
+        <div class="form-input-field confirm-password my-3">
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" name="confirm-password" id="confirm-password" placeholder="Password">
+        </div>
+
+        <div class="my-3">
+          <div class="terms-and-agreements">
+            <input type="checkbox" name="terms-and-agreements" id="terms-and-agreements" />
+            <label for="terms-and-agreements">By signing up, you agree to the Terms of Service and Privacy Policy
+            </label>
+          </div>
+        </div>
+
+        <div class="submit-form-field">
+          <button class="btn btn-primary d-block w-100 py-2" type="submit">Create an account</button>
+          <p class="text-center my-3">Already have an account? <a href="">Login</a></p>
+          <span class="or">or</span>
+          <a href="" class="btn d-block w-100 border border-1 text-center bg-light py-2"><i class="fa fa-google"></i> Signup with Google</a>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="footer">
+
+    </div>
+  </main>
+  
+</body>
+</html>

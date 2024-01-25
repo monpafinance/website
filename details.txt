@@ -1,0 +1,15 @@
+Colours:
+Primary: rgb(41 96 247);
+Secondary: 
+Black: rgb(10 10 10)
+Dark: rgb(52 53 56)
+White: rgb(255 255 255)
+Light: rgb(246 249 255)
+
+Dark mode:
+Dark bg: rgb(14 14 22)
+Dark - 2 (lighter): rgb(28 28 36)
+Dar - gradient -start: rgb(16 21 41)
+
+Font family:
+Primary

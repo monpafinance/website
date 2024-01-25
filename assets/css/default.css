@@ -1,0 +1,152 @@
+@import url("../vendor/bootstrap/css/bootstrap.min.css");
+@import url("../vendor/fontawesome/css/all.min.css");
+
+@font-face {
+  font-family: "Monpa Poppins";
+  src: url("../vendor/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Monpa Jeko Demo";
+  src: url("../vendor/fonts/Jeko Demo Fonts/JekoDEMO-Medium.otf");
+}
+
+:root {
+  --monpa-theme-primary: #2960f7;
+  --monpa-theme-primary-dark: #0e0e16;
+
+  --monpa-theme-primary-rgb: 41, 96, 247;
+  
+  --monpa-theme-white: #fff;
+  --monpa-theme-light: rgba(246 249 255, 0.75);
+  --monpa-theme-black: #000;
+  --monpa-theme-dark: rgb(52, 53, 56);
+  --monpa-theme-grey: rgb(239 242 248);
+
+
+  --monpa-font-primary: "Monpa Jeko Demo";
+
+  /* Shadows - From boostrap */
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+
+  font-family: var(--monpa-font-primary) !important;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+* {
+  font-family: var(--monpa-font-primary);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--monpa-font-primary) !important;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 20px;
+}
+
+/* Overridding Bootstrap files */
+.btn {
+  box-shadow: none !important;
+  border: none !important;
+  font-family: var(--monpa-font-primary);
+}
+@media screen and (min-width: 768px) {
+  .section-container.container {
+    --side-margin: 96px;
+    max-width: calc(100% - (2 * 96px)) !important;
+  }
+}
+
+a:not(.btn) {
+  text-decoration: none;
+  color: var(--monpa-theme-dark);
+  transition: .4s;
+}
+a:not(.btn) {
+  text-decoration: underline;
+  color: var(--monpa-theme-primary);
+}
+
+/* ---------------------------
+Backgorund colours
+----------------------------- */
+.bg-primary {
+  background-color: var(--monpa-theme-primary) !important;
+}
+.bg-white {
+  background-color: var(--monpa-theme-white) !important;
+}
+
+/* -------------------------------
+Typography
+/* --------------------------------- */
+/* Colours */
+.text-black {
+  color: var(--monpa-theme-black) !important;
+}
+.text-white {
+  color: var(--monpa-theme-white) !important;
+}
+.text-light {
+  color: var(--monpa-theme-light) !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+
+p, .text {
+  color: var(--monpa-theme-dark);
+}
+
+/* Font family */
+.font-primary {
+  font-family: var(--monpa-font-primary);
+}
+
+
+/* -----------------------------
+Buttons
+------------------------------- */
+.btn-outline-primary {
+  background-color: var(--monpa-theme-primary) !important;
+  color: var(--monpa-theme-white) !important;
+  border: 2px solid var(--monpa-theme-white) !important;
+}
+.btn-outline-primary:hover {
+  background-color: var(--monpa-theme-white) !important;
+  color: var(--monpa-theme-primary) !important;
+  border: none;
+}
+.btn-outline-white {
+  background-color: var(--monpa-theme-white) !important;
+  color: var(--monpa-theme-primary) !important;
+  border: 2px solid var(--monpa-theme-white) !important;
+}
+.btn-outline-white:hover {
+  background-color: var(--monpa-theme-primary) !important;
+  color: var(--monpa-theme-white) !important;
+  border: 2px solid var(--monpa-theme-white) !important; 
+}

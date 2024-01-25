@@ -1,0 +1,83 @@
+@import url("default.css");
+
+* {
+  font-family: var(--monpa-font-primary);
+  font-size: 1rem;
+}
+
+body > aside {
+  display: none;
+  --content-width: 0;
+}
+
+body > main {
+  --content-width: 100%;
+  padding: 1.2rem;
+}
+
+
+@media screen and (min-width: 992px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+
+  body > * {
+    width: var(--content-width);
+    height: 100%;
+  }
+
+  body > aside {
+    display: block;
+    --content-width: 40%;
+
+    background: url("../imgs/welcome-banner.png") center no-repeat;
+    background-size: cover;
+  }
+
+  body > main {
+    --content-width: 60%;
+    padding: 3.2rem !important;
+    padding-right: 3.2rem;
+  }
+}
+
+main #signup-form .form-input-field label {
+  display: block;
+  font-family: var(--monpa-font-primary) !important;
+}
+
+main #signup-form .form-input-field input {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--monpa-theme-grey);
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  outline: none;
+  font-family: var(--monpa-font-primary);
+}
+/* main #signup-form input::placeholder {
+  color: ;
+
+} */
+main #signup-form .submit-form-field {
+  position: relative;
+}
+
+main #signup-form .submit-form-field .or::before {
+  position: absolute;
+  border: 1px solid black;
+  width: 100%;
+  height: 10px;
+  top: 0;
+}
+
+
+
+
